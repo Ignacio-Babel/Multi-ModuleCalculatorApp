@@ -21,6 +21,20 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>jdk19</id>
+			<activation>
+				<jdk>1.9</jdk>
+			</activation>
+			<properties>
+				<maven.compiler.source>9</maven.compiler.source>
+				<maven.compiler.target>9</maven.compiler.target>
+			</properties>
+		</profile>
+	</profiles>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
